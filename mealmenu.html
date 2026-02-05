@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meals Menu | Sakura Café & Lounge</title>
+    <link rel="stylesheet" href="mealmenu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="img/logo.jpg" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="menu-page">
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">SAKURA CAFÉ & LOUNGE</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="promo.html">PROMO</a></li>
+        <li><a href="coffeemenu.html" class="active">MENU</a></li>
+        <li><a href="index.html#location">LOCATION</a></li>
+      </ul>
+    </nav>
+
+    <header
+      class="menu-hero-section"
+      style="
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(&quot;img/cover.jpg&quot;);
+        background-size: cover;
+        background-position: center;
+        padding: 150px 0 80px 0;
+        text-align: center;
+      "
+    >
+      <img
+        src="img/logo.jpg"
+        alt="Logo"
+        class="mini-logo"
+        style="
+          margin: 0 auto;
+          display: block;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 2px solid var(--primary-brown);
+        "
+      />
+      <p
+        class="welcome-text"
+        style="color: var(--accent-pink); letter-spacing: 3px; margin-top: 20px"
+      >
+        LOCAL FAVORITES
+      </p>
+      <h1
+        style="
+          font-family: &quot;Playfair Display&quot;, serif;
+          font-size: 2.5rem;
+          color: white;
+          margin-bottom: 40px;
+        "
+      >
+        MEALS MENU
+      </h1>
+      <div style="max-width: 1000px; margin: 0 auto; padding: 0 5%">
+        <section class="category-grid">
+          <a href="coffeemenu.html" class="cat-card"
+            ><div class="cat-img-wrapper"><img src="img/coffee.jpg" /></div>
+            <span>COFFEE & FRAPPE</span></a
+          >
+          <a href="mealmenu.html" class="cat-card"
+            ><div class="cat-img-wrapper"><img src="img/meal4.jpg" /></div>
+            <span>MEALS</span></a
+          >
+          <a href="beveragemenu.html" class="cat-card"
+            ><div class="cat-img-wrapper"><img src="img/sanmig.jpg" /></div>
+            <span>BEVERAGE</span></a
+          >
+        </section>
+      </div>
+    </header>
+
+    <main class="menu-container">
+      <section class="menu-section split reverse reveal">
+        <div class="menu-side-img">
+          <img src="img/meal3.jpg" alt="Pasta" />
+        </div>
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            MEALS <span>(PASTA MEAL)</span>
+          </h3>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Carbonara</span>
+              <div class="dots"></div>
+              <span>200</span>
+            </div>
+            <p class="meal-desc">
+              Creamy sauce with bacon and mushrooms, served with 4 pcs garlic
+              bread.
+            </p>
+          </div>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Spaghetti</span>
+              <div class="dots"></div>
+              <span>150</span>
+            </div>
+            <p class="meal-desc">
+              Spaghetti with sweet and sour meaty sauce, served with 4 pcs
+              garlic bread.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section split reveal">
+        <div class="menu-side-img">
+          <img src="img/meal2.jpg" alt="Beef Tapa" />
+
+          <img src="img/meal5.jpg" alt="Liempo" />
+
+          <img src="img/meal1.jpg" alt="Pork Sisig" />
+        </div>
+
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            MEALS <span>(RICE MEAL)</span>
+          </h3>
+
+          <div class="meal-list">
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>BEEF TAPA</span>
+                <div class="dots"></div>
+                <span>225</span>
+              </div>
+              <p class="meal-desc">
+                Marinated beef served with fried rice, egg, & mixed vegetables.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>DEEP FRIED LIEMPO</span>
+                <div class="dots"></div>
+                <span>220</span>
+              </div>
+              <p class="meal-desc">
+                Crispy pork served with fried rice, egg, & mixed vegetables.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>BURGER STEAK</span>
+                <div class="dots"></div>
+                <span>215</span>
+              </div>
+              <p class="meal-desc">
+                Tender beef patties in mushroom gravy, served with egg, & rice.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>HUNGARIAN SAUSAGE</span>
+                <div class="dots"></div>
+                <span>169</span>
+              </div>
+              <p class="meal-desc">
+                One sausage served with fried rice, egg, & mixed vegetables.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>SPAM</span>
+                <div class="dots"></div>
+                <span>149</span>
+              </div>
+              <p class="meal-desc">
+                4 pcs luncheon meat served with fried rice, egg, & mixed
+                vegetables.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>CHICKEN NUGGETS</span>
+                <div class="dots"></div>
+                <span>149</span>
+              </div>
+              <p class="meal-desc">
+                4-5 pcs nuggets served with egg and fried rice.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>SKINLESS LONGGANISA</span>
+                <div class="dots"></div>
+                <span>149</span>
+              </div>
+              <p class="meal-desc">
+                Filipino sausage served with fried rice, egg, & mixed
+                vegetables.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>PORK SISIG</span>
+                <div class="dots"></div>
+                <span>129</span>
+              </div>
+              <p class="meal-desc">
+                Crispy sisig served with egg and fried rice.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>CHICKEN TERIYAKI</span>
+                <div class="dots"></div>
+                <span>129</span>
+              </div>
+              <p class="meal-desc">
+                Tender chicken breast glazed with sweet and savory sauce, &
+                served with mixed vegetables.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>CRISPY FRIED SHANGHAI</span>
+                <div class="dots"></div>
+                <span>99</span>
+              </div>
+              <p class="meal-desc">
+                4-5 pcs Shanghai rolls, fried rice, and mixed vegetables.
+              </p>
+            </div>
+
+            <div class="meal-item">
+              <div class="meal-header">
+                <span>PORK BBQ</span>
+                <div class="dots"></div>
+                <span>99</span>
+              </div>
+              <p class="meal-desc">
+                2 pcs BBQ stick served with fried rice & vegetables.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section split reverse reveal">
+        <div class="menu-side-img">
+          <img src="img/nachos.jpg" alt="Fries Display" />
+        </div>
+
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            SNACKS <span>(FRIES)</span>
+          </h3>
+
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>CHEESY BACON FRIES</span>
+              <div class="dots"></div>
+              <span>179</span>
+            </div>
+            <p class="meal-desc">
+              Cheesy sauce with bacon bits, topped over fries.
+            </p>
+          </div>
+
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>FRENCH FRIES</span>
+              <div class="dots"></div>
+              <span>149</span>
+            </div>
+            <p class="meal-desc">
+              Flavor upgrades available for P10: Sour Cream, Cheese, or BBQ.
+            </p>
+          </div>
+
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>SPAM FRIES</span>
+              <div class="dots"></div>
+              <span>199</span>
+            </div>
+          </div>
+
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            SNACKS <span>(NACHOS)</span>
+          </h3>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>SOLO NACHOS</span>
+              <div class="dots"></div>
+              <span>179</span>
+            </div>
+          </div>
+
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>OVERLOAD NACHOS</span>
+              <div class="dots"></div>
+              <span>149</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section split reveal">
+        <div class="menu-side-img">
+          <img src="img/waffles.jpg" alt="Sakura Waffles" />
+        </div>
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            SNACKS <span>(WAFFLES)</span>
+          </h3>
+          <div class="menu-grid-two-col">
+            <div class="meal-column">
+              <div class="meal-item">
+                <div class="meal-header">
+                  <span>Classic</span>
+                  <div class="dots"></div>
+                  <span>69</span>
+                </div>
+              </div>
+              <div class="meal-item">
+                <div class="meal-header">
+                  <span>Caramel</span>
+                  <div class="dots"></div>
+                  <span>99</span>
+                </div>
+              </div>
+              <div class="meal-item">
+                <div class="meal-header">
+                  <span>Oreo</span>
+                  <div class="dots"></div>
+                  <span>99</span>
+                </div>
+              </div>
+            </div>
+            <div class="meal-column">
+              <div class="meal-item">
+                <div class="meal-header">
+                  <span>Chocolate</span>
+                  <div class="dots"></div>
+                  <span>99</span>
+                </div>
+              </div>
+              <div class="meal-item">
+                <div class="meal-header">
+                  <span>Biscoff</span>
+                  <div class="dots"></div>
+                  <span>109</span>
+                </div>
+              </div>
+              <div class="meal-item">
+                <div class="meal-header">
+                  <span>Nutella</span>
+                  <div class="dots"></div>
+                  <span>109</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section split reverse reveal">
+        <div class="menu-side-img">
+          <img src="img/burger.jpg" alt="Sakura Burgers" />
+        </div>
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            SNACKS <span>(BURGERS)</span>
+          </h3>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Classic Burger</span>
+              <div class="dots"></div>
+              <span>99</span>
+            </div>
+          </div>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Cheesy Burger</span>
+              <div class="dots"></div>
+              <span>119</span>
+            </div>
+          </div>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Bacon Cheeseburger</span>
+              <div class="dots"></div>
+              <span>149</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section split reveal">
+        <div class="menu-side-img">
+          <img src="img/sandwiche.jpg" alt="Sandwiches" />
+        </div>
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            SNACKS <span>(SANDWICHES)</span>
+          </h3>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Ham and Egg</span>
+              <div class="dots"></div>
+              <span>109</span>
+            </div>
+          </div>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Spam and Egg</span>
+              <div class="dots"></div>
+              <span>129</span>
+            </div>
+          </div>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Clubhouse</span>
+              <div class="dots"></div>
+              <span>199</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section split reverse reveal">
+        <div class="menu-side-img">
+          <img src="img/burger.jpg" alt="Burger Combo" />
+        </div>
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            SNACKS <span>(BURGER + FRIES)</span>
+          </h3>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Classic Burger</span>
+              <div class="dots"></div>
+              <span>179</span>
+            </div>
+          </div>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Cheeseburger</span>
+              <div class="dots"></div>
+              <span>199</span>
+            </div>
+          </div>
+          <div class="meal-item">
+            <div class="meal-header">
+              <span>Bacon Cheeseburger</span>
+              <div class="dots"></div>
+              <span>219</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-left">
+        <div class="brand-wrapper">
+          <img src="img/logo.jpg" alt="Sakura Logo" class="footer-logo" />
+          <div class="brand-text">
+            <h3>SAKURA CAFÉ & LOUNGE</h3>
+            <p>
+              Sakura Café & Lounge is a serene haven where tradition and modern
+              elegance meet over every cup of coffee.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h4>EXPLORE</h4>
+        <a href="#">About</a>
+        <a href="mealmenu.html">Menu</a>
+        <a href="https://maps.app.goo.gl/DttSGmVVDWUX4TjS7">Locations</a>
+
+        <div class="social-links">
+          <a
+            href="https://instagram.com/SakuraCafeLoungee"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/Sakuracafeandlounge"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sakura-container" aria-hidden="true">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+    </div>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("reveal");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".menu-section").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>

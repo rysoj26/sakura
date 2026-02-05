@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Menu | Sakura Café & Lounge</title>
+    <link rel="stylesheet" href="coffeemenu.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/logo.jpg" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="menu-page">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">SAKURA CAFÉ & LOUNGE</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+          <li><a href="promo.html">PROMO</a></li>
+        <li><a href="menu.html" class="active">MENU</a></li>
+        <li><a href="index.html#location">LOCATION</a></li>
+      </ul>
+    </nav>
+
+    <header
+      class="menu-hero-section"
+      style="
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(&quot;img/cover.jpg&quot;);
+        background-size: cover;
+        background-position: center;
+        padding: 150px 0 80px 0;
+        text-align: center;
+      "
+    >
+      <img
+        src="img/logo.jpg"
+        alt="Logo"
+        class="mini-logo"
+        style="
+          margin: 0 auto;
+          display: block;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 2px solid var(--primary-brown);
+        "
+      />
+      <p
+        class="welcome-text"
+        style="color: var(--accent-pink); letter-spacing: 3px; margin-top: 20px"
+      >
+        OUR SPECIALTY
+      </p>
+      <h1
+        style="
+          font-family: &quot;Playfair Display&quot;, serif;
+          font-size: 2.5rem;
+          color: white;
+          margin-bottom: 40px;
+        "
+      >
+        COFFEE MENU
+      </h1>
+
+      <div style="max-width: 1000px; margin: 0 auto; padding: 0 5%">
+        <section class="category-grid">
+          <a href="coffeemenu.html" class="cat-card">
+            <div class="cat-img-wrapper">
+              <img src="img/coffee.jpg" alt="Coffee" />
+            </div>
+            <span style="color: white">COFFEE & FRAPPE</span>
+          </a>
+          <a href="mealmenu.html" class="cat-card">
+            <div class="cat-img-wrapper">
+              <img src="img/meal4.jpg" alt="Meals" />
+            </div>
+            <span style="color: white">MEALS</span>
+          </a>
+          <a href="beveragemenu.html" class="cat-card">
+            <div class="cat-img-wrapper">
+              <img src="img/sanmig.jpg" alt="Beverage" />
+            </div>
+            <span style="color: white">BEVERAGE</span>
+          </a>
+        </section>
+      </div>
+    </header>
+
+    <main
+      class="menu-container"
+      style="
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 50px 5%;
+        background: white;
+      "
+    >
+      <section class="menu-section reveal">
+        <h3
+          class="category-title"
+          style="
+            color: var(--primary-brown);
+            border-bottom: 2px solid var(--primary-brown);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+          "
+        >
+          ESPRESSO <span>(ESPRESSO BASED)</span>
+        </h3>
+        <div class="menu-table">
+          <div class="menu-row header">
+            <span>Item</span>
+            <div class="prices-head">
+              <span>Tall</span><span>Grande</span><span>Venti</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Americano</span>
+            <div class="prices">
+              <span>115</span><span>125</span><span>135</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Barista Drink</span>
+            <div class="prices">
+              <span>149</span><span>159</span><span>179</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Biscoff Latte</span>
+            <div class="prices">
+              <span>169</span><span>179</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Butterscotch Latte</span>
+            <div class="prices">
+              <span>159</span><span>179</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Dark Mocha</span>
+            <div class="prices">
+              <span>159</span><span>179</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Cappuccino Macchiato</span>
+            <div class="prices">
+              <span>139</span><span>149</span><span>159</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Caramel Macchiato</span>
+            <div class="prices">
+              <span>159</span><span>179</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Coffee Latte</span>
+            <div class="prices">
+              <span>129</span><span>149</span><span>159</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Hazelnut Mocha Macchiato</span>
+            <div class="prices">
+              <span>179</span><span>189</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Nutella Latte</span>
+            <div class="prices">
+              <span>159</span><span>169</span><span>179</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Salted Caramel Macchiato</span>
+            <div class="prices">
+              <span>159</span><span>179</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Spanish Latte</span>
+            <div class="prices">
+              <span>139</span><span>149</span><span>169</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Peppermint Mocha</span>
+            <div class="prices">
+              <span>159</span><span>169</span><span>189</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>White Mocha</span>
+            <div class="prices">
+              <span>149</span><span>159</span><span>179</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Vanilla Latte</span>
+            <div class="prices">
+              <span>159</span><span>169</span><span>189</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="menu-section split reveal"
+        style="display: flex; gap: 40px; margin: 80px 0; align-items: center"
+      >
+        <div class="menu-side-img" style="flex: 1">
+          <img
+            src="img/coffee1.jpg"
+            alt="Non-Coffee"
+            style="
+              width: 100%;
+              border-radius: 15px;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            "
+          />
+        </div>
+        <div class="menu-side-content" style="flex: 1.5">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            ESPRESSO <span>(NON COFFEE BASED)</span>
+          </h3>
+          <div class="menu-table">
+            <div class="menu-row header">
+              <span>Item</span>
+              <div class="prices-head">
+                <span>Tall</span><span>Grande</span><span>Venti</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>White Chocolate</span>
+              <div class="prices">
+                <span>149</span><span>159</span><span>179</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Signature Chocolate</span>
+              <div class="prices">
+                <span>159</span><span>169</span><span>189</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Strawberry Milk</span>
+              <div class="prices">
+                <span>149</span><span>169</span><span>189</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Oreo Milk</span>
+              <div class="prices">
+                <span>159</span><span>169</span><span>179</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section split reverse reveal">
+        <div class="menu-side-img">
+          <img src="img/matchastrawberry.jpg" alt="Matcha Series" />
+        </div>
+        <div class="menu-side-content">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            MATCHA SERIES <span></span>
+          </h3>
+          <div class="menu-table">
+            <div class="menu-row header">
+              <span>Item</span>
+              <div class="prices-head">
+                <span>Tall</span><span>Grande</span><span>Venti</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Dirty Matcha</span>
+              <div class="prices">
+                <span>160</span><span>179</span><span>199</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Sakura Matcha (Non Coffee)</span>
+              <div class="prices">
+                <span>160</span><span>179</span><span>199</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Matcha Latte (Non Coffee)</span>
+              <div class="prices">
+                <span>150</span><span>169</span><span>189</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section reveal" style="margin-top: 80px">
+        <h3
+          class="category-title"
+          style="
+            color: var(--primary-brown);
+            border-bottom: 2px solid var(--primary-brown);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+          "
+        >
+          FRAPPE <span>(COFFEE BASED)</span>
+        </h3>
+        <div class="menu-table">
+          <div class="menu-row header">
+            <span>Item</span>
+            <div class="prices-head">
+              <span>Tall</span><span>Grande</span><span>Venti</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Butterscotch</span>
+            <div class="prices">
+              <span>159</span><span>179</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Caramel Coffee Jelly</span>
+            <div class="prices">
+              <span>179</span><span>189</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Caramel</span>
+            <div class="prices">
+              <span>169</span><span>179</span><span>189</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Chocolate Cookies w/ Oreo</span>
+            <div class="prices">
+              <span>169</span><span>179</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Coffee</span>
+            <div class="prices">
+              <span>149</span><span>169</span><span>184</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Coffee Jelly</span>
+            <div class="prices">
+              <span>169</span><span>179</span><span>189</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Dark Mocha</span>
+            <div class="prices">
+              <span>179</span><span>189</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Java Chip</span>
+            <div class="prices">
+              <span>179</span><span>189</span><span>199</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Peppermint</span>
+            <div class="prices">
+              <span>169</span><span>179</span><span>189</span>
+            </div>
+          </div>
+          <div class="menu-row">
+            <span>Salted Caramel</span>
+            <div class="prices">
+              <span>159</span><span>179</span><span>189</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="menu-section split reveal"
+        style="display: flex; gap: 40px; margin: 80px 0; align-items: center"
+      >
+        <div class="menu-side-img" style="flex: 1">
+          <img
+            src="img/frappe1.jpg"
+            alt="Cream Frappe"
+            style="width: 100%; border-radius: 15px"
+          />
+        </div>
+        <div class="menu-side-content" style="flex: 1.5">
+          <h3
+            class="category-title"
+            style="
+              color: var(--primary-brown);
+              border-bottom: 2px solid var(--primary-brown);
+              padding-bottom: 8px;
+              margin-bottom: 15px;
+            "
+          >
+            FRAPPE <span>(CREAM BASED)</span>
+          </h3>
+          <div class="menu-table">
+            <div class="menu-row header">
+              <span>Item</span>
+              <div class="prices-head">
+                <span>Tall</span><span>Grande</span><span>Venti</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Biscoff</span>
+              <div class="prices">
+                <span>179</span><span>189</span><span>209</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Caramel</span>
+              <div class="prices">
+                <span>169</span><span>189</span><span>199</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Chocolate, Chocolate</span>
+              <div class="prices">
+                <span>159</span><span>169</span><span>179</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Chocolate Cookies w/ Oreo</span>
+              <div class="prices">
+                <span>169</span><span>189</span><span>199</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Nutella</span>
+              <div class="prices">
+                <span>169</span><span>189</span><span>199</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Peppermint</span>
+              <div class="prices">
+                <span>169</span><span>179</span><span>189</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Matcha</span>
+              <div class="prices">
+                <span>179</span><span>189</span><span>199</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Salted Caramel</span>
+              <div class="prices">
+                <span>159</span><span>179</span><span>189</span>
+              </div>
+            </div>
+            <div class="menu-row">
+              <span>Strawberries & Cream</span>
+              <div class="prices">
+                <span>169</span><span>189</span><span>199</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="sakura-container" aria-hidden="true">
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+      <div class="petal"></div>
+    </div>
+    <footer>
+      <div class="footer-left">
+        <div class="brand-wrapper">
+          <img src="img/logo.jpg" alt="Sakura Logo" class="footer-logo" />
+          <div class="brand-text">
+            <h3>SAKURA CAFÉ & LOUNGE</h3>
+            <p>
+              Sakura Café & Lounge is a serene haven where tradition and modern
+              elegance meet over every cup of coffee.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h4>EXPLORE</h4>
+        <a href="#">About</a>
+        <a href="mealmenu.html">Menu</a>
+        <a href="https://maps.app.goo.gl/DttSGmVVDWUX4TjS7">Locations</a>
+
+        <div class="social-links">
+          <a
+            href="https://instagram.com/SakuraCafeLoungee"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/Sakuracafeandlounge"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("reveal");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".menu-section")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
