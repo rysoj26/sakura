@@ -121,12 +121,17 @@ body {
   cursor: pointer;
   margin-top: 5px;
 }
-
+.valentines-promo {
+  color: #ff8896;
+  font-weight: bold;
+}
 .btn-primary {
   background: #d4b8a7;
   color: #000;
 }
-
+.promo-date  {
+font-weight: bold;
+}
 .btn-primary:hover {
   background: #c2a694;
   transform: translateY(-2px);
