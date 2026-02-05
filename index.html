@@ -286,18 +286,17 @@
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              // Pag nakita na ng browser, dadagdag yung class na "reveal"
+              
               entry.target.classList.add("reveal");
             } else {
-              // OPTIONAL: Pag ni-scroll pataas, mawawala ulit (para paulit-ulit yung effect)
-              // entry.target.classList.remove("reveal");
+              
             }
           });
         },
         { threshold: 0.1 },
-      ); // Triggers pag 10% na nung element ang kita
+      ); 
 
-      // Dito natin sinasabi kung anong mga elements ang "babantayan"
+      
       document
         .querySelectorAll(
           ".section h2, .section-desc, .features-grid, .card, .menu-item, .location-details",

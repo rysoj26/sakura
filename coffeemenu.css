@@ -22,9 +22,7 @@ body {
   line-height: 1.6;
 }
 
-/* =========================================
-    2. NAVBAR STYLING
-   ========================================= */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -78,9 +76,7 @@ body {
   width: 100%;
 }
 
-/* =========================================
-    3. MENU HERO & HEADER
-   ========================================= */
+
 .menu-hero-section {
   position: relative;
   text-align: center;
@@ -109,9 +105,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* =========================================
-    4. MENU CONTAINER & CATEGORY TITLE
-   ========================================= */
+
 .menu-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -145,9 +139,7 @@ h1 {
   margin-left: 5px;
 }
 
-/* =========================================
-    5. MEAL ITEM (DOTTED & BOLD PRICES)
-   ========================================= */
+
 .meal-item {
   margin-bottom: 22px;
   width: 100%;
@@ -193,9 +185,7 @@ h1 {
   font-style: italic;
 }
 
-/* =========================================
-    6. GRID & SPLIT LAYOUT (STACKED 1:1 PICS)
-   ========================================= */
+
 .menu-section.split {
   display: flex;
   gap: 50px;
@@ -207,7 +197,7 @@ h1 {
   flex-direction: row-reverse;
 }
 
-/* Vertical Stacking for Multiple Pics */
+
 .menu-side-img {
   flex: 1;
   max-width: 380px;
@@ -216,7 +206,7 @@ h1 {
   gap: 20px;
 }
 
-/* 1:1 SQUARE LOGIC */
+
 .menu-side-img img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -240,24 +230,21 @@ h1 {
   gap: 40px;
 }
 
-/* =========================================
-    7. SAKURA PETALS EFFECT
-   ========================================= */
-/* Container must cover the full screen */
+
 .sakura-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Allows clicking through petals */
+  pointer-events: none; 
   z-index: 9999;
   overflow: hidden;
 }
 
 .petal {
   position: absolute;
-  background-color: #ffb7c5; /* Sakura Pink */
+  background-color: #ffb7c5; 
   border-radius: 150% 0 150% 0;
   width: 15px;
   height: 15px;
@@ -266,7 +253,7 @@ h1 {
   animation: fall linear infinite;
 }
 
-/* Create unique positions and speeds for each petal */
+
 .petal:nth-child(1) {
   left: 10%;
   animation-duration: 7s;
@@ -337,15 +324,13 @@ h1 {
     transform: translateX(-20px) rotate(180deg);
   }
 }
-/* =========================================
-    8. RESPONSIVE & UTILITIES
-   ========================================= */
+
 .reveal {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
 
-/* Category Cards sa Taas */
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -379,9 +364,7 @@ h1 {
   color: white;
 }
 
-/* =========================================
-    FOOTER - Combined & Cleaned (FROM FIRST CSS)
-   ========================================= */
+
 footer {
   background: #e5d1c5;
   padding: 60px 10%;
@@ -391,7 +374,7 @@ footer {
   font-family: var(--font-sans);
 }
 
-/* --- New Brand Wrapper Styles --- */
+
 .brand-wrapper {
   display: flex;
   align-items: center;
@@ -418,7 +401,7 @@ footer {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* --- Left & Right Containers --- */
+
 .footer-left {
   max-width: 500px;
 }
@@ -441,7 +424,6 @@ footer {
   color: var(--primary-brown);
 }
 
-/* --- Social Icons --- */
 .social-links {
   display: flex;
   gap: 20px;
@@ -459,9 +441,7 @@ footer {
   transform: translateY(-3px);
 }
 
-/* =========================================
-    9. MENU TABLE & PRICE ALIGNMENT
-   ========================================= */
+
 .menu-row {
   display: flex;
   justify-content: space-between;
@@ -505,11 +485,6 @@ footer {
   width: 70px;
 }
 
-/* =========================================
-    10. MOBILE RESPONSIVE STYLES
-   ========================================= */
-
-/* Tablet Responsive - 992px */
 @media (max-width: 992px) {
   .navbar {
     padding: 20px 5%;
@@ -528,9 +503,8 @@ footer {
   }
 }
 
-/* Mobile Responsive - 768px */
 @media (max-width: 768px) {
-  /* Navbar */
+  
   .navbar {
     padding: 15px 5%;
     flex-direction: column;
@@ -554,7 +528,7 @@ footer {
     font-size: 0.75rem;
   }
 
-  /* Hero Section */
+  
   .menu-hero-section {
     padding-top: 140px !important;
   }
@@ -573,7 +547,7 @@ footer {
     letter-spacing: 2px;
   }
 
-  /* Category Grid - Keep 3 columns on mobile */
+ 
   .category-grid {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 10px;
@@ -587,12 +561,12 @@ footer {
     border-radius: 10px;
   }
 
-  /* Menu Container */
+ 
   .menu-container {
     padding: 30px 5% !important;
   }
 
-  /* Category Title */
+  
   .category-title {
     font-size: 1.3rem !important;
     gap: 10px;
@@ -602,7 +576,7 @@ footer {
     font-size: 0.75rem !important;
   }
 
-  /* Price Alignment - Mobile - Keep Table Format - FIXED */
+  
   .menu-row {
     font-size: 0.85rem;
     padding: 10px 0;
@@ -630,9 +604,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 180px; /* INCREASED from 150px */
+    min-width: 180px; 
     flex-shrink: 0;
-    gap: 15px; /* INCREASED from 10px */
+    gap: 15px; 
   }
 
   .prices span,
@@ -642,7 +616,7 @@ footer {
     font-size: 0.85rem;
   }
 
-  /* Split Sections */
+  
   .menu-section.split,
   .menu-section.reverse {
     flex-direction: column !important;
@@ -659,13 +633,13 @@ footer {
     width: 100% !important;
   }
 
-  /* Grid Layouts */
+  
   .menu-grid-two-col {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
-  /* Footer - Mobile Centered Layout */
+  
   footer {
     flex-direction: column;
     gap: 30px;
@@ -736,14 +710,14 @@ footer {
     font-size: 1.5rem;
   }
 
-  /* Petals - Smaller on mobile */
+  
   .petal {
     width: 10px;
     height: 15px;
   }
 }
 
-/* Small Mobile - 480px */
+
 @media (max-width: 480px) {
   .navbar {
     padding: 12px 4%;
@@ -771,7 +745,7 @@ footer {
     font-size: 1.1rem !important;
   }
 
-  /* Category Grid - Keep 3 columns on small mobile */
+  
   .category-grid {
     gap: 8px !important;
   }
@@ -781,7 +755,7 @@ footer {
     letter-spacing: 1px;
   }
 
-  /* Price Alignment - Small Mobile - Keep Table Format - FIXED */
+  
   .menu-row {
     font-size: 0.78rem;
     padding: 8px 0;
@@ -809,14 +783,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 150px; /* INCREASED from 126px */
+    min-width: 150px; 
     flex-shrink: 0;
-    gap: 12px; /* INCREASED from 8px */
+    gap: 12px; 
   }
 
   .prices span,
   .prices-head span {
-    width: 45px; /* INCREASED from 42px */
+    width: 45px; 
     text-align: center;
     font-size: 0.78rem;
   }
@@ -838,7 +812,7 @@ footer {
     border-radius: 10px;
   }
 
-  /* Footer - Optimized for Small Mobile */
+  
   footer {
     padding: 40px 6%;
     gap: 25px;
@@ -877,14 +851,14 @@ footer {
     font-size: 1.3rem;
   }
 
-  /* Reduce petal size */
+  
   .petal {
     width: 8px;
     height: 12px;
   }
 }
 
-/* Extra Small Mobile - 375px */
+
 @media (max-width: 375px) {
   .logo a {
     font-size: 0.75rem;
@@ -903,7 +877,7 @@ footer {
     font-size: 1rem !important;
   }
 
-  /* Category Grid - Keep 3 columns on extra small mobile */
+  
   .category-grid {
     gap: 5px !important;
   }
@@ -913,7 +887,7 @@ footer {
     letter-spacing: 0.5px;
   }
 
-  /* Price Alignment - Extra Small Mobile - Keep Table Format - FIXED */
+  
   .menu-row {
     font-size: 0.72rem;
     padding: 8px 0;
@@ -941,19 +915,19 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 135px; /* INCREASED from 108px */
+    min-width: 135px; 
     flex-shrink: 0;
-    gap: 10px; /* INCREASED from 6px */
+    gap: 10px; 
   }
 
   .prices span,
   .prices-head span {
-    width: 42px; /* INCREASED from 36px */
+    width: 42px; 
     text-align: center;
     font-size: 0.72rem;
   }
 
-  /* Footer - Extra Small */
+  
   footer {
     padding: 35px 5%;
   }
@@ -989,7 +963,7 @@ footer {
   }
 }
 
-/* Landscape Mobile Fix */
+
 @media (max-width: 768px) and (orientation: landscape) {
   .menu-hero-section {
     padding: 100px 0 40px 0 !important;
@@ -1008,7 +982,7 @@ footer {
     padding: 10px 5%;
   }
 
-  /* Footer - Landscape Mode */
+ 
   footer {
     flex-direction: column;
     gap: 25px;

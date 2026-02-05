@@ -8,7 +8,7 @@
   --sakura-pink: #ffdae9;
 }
 
-/* CRITICAL: Base Styles - This fixes the scrollbar issue */
+
 
 * {
   margin: 0;
@@ -23,11 +23,11 @@ body {
   line-height: 1.6;
 }
 .promo-details {
-    list-style: none; /* This removes the black markers */
+    list-style: none;
     padding: 0;
     margin-bottom: 30px;
 }
-/* Hero Section */
+
 .hero {
   height: auto;
   min-height: 100vh;
@@ -96,7 +96,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Fix for the Navbar Logo (Text version) */
+
 .navbar .logo {
   font-weight: 700;
   font-size: 1.2rem;
@@ -109,7 +109,7 @@ body {
   margin: 15px 0;
 }
 
-/* Buttons */
+
 .btn {
   padding: 12px 25px;
   text-decoration: none;
@@ -154,7 +154,7 @@ font-weight: bold;
   margin-top: 20px;
 }
 
-/* Styling for the new smaller text */
+
 .feature-title {
   font-weight: 600;
   margin-top: 15px;
@@ -179,7 +179,7 @@ font-weight: bold;
   padding: 20px;
 }
 
-/* Generic Section Styles */
+
 .section {
   padding: 80px 10%;
   text-align: center;
@@ -200,7 +200,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Grid Systems */
+
 .card-grid,
 .features-grid {
   display: grid;
@@ -255,7 +255,7 @@ h2 {
   transition-delay: 0.2s;
 }
 
-/* Location Section - Combined & Cleaned */
+
 .location-section {
   display: flex;
   flex-wrap: wrap;
@@ -283,7 +283,7 @@ h2 {
   text-align: left;
 }
 
-/* Footer - Combined & Cleaned */
+
 footer {
   background: #e5d1c5;
   padding: 60px 10%;
@@ -293,7 +293,7 @@ footer {
   font-family: var(--font-sans);
 }
 
-/* --- New Brand Wrapper Styles --- */
+
 .brand-wrapper {
   display: flex;
   align-items: center;
@@ -320,7 +320,7 @@ footer {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* --- Left & Right Containers --- */
+
 .footer-left {
   max-width: 500px;
 }
@@ -343,7 +343,7 @@ footer {
   color: var(--primary-brown);
 }
 
-/* --- Social Icons --- */
+
 .social-links {
   display: flex;
   gap: 20px;
@@ -361,7 +361,7 @@ footer {
   transform: translateY(-3px);
 }
 
-/* Sakura Petal Animation - FIXED TO PREVENT OVERFLOW */
+
 .sakura-container {
   position: fixed;
   top: 0;
@@ -406,7 +406,7 @@ footer {
   }
 }
 
-/* Randomizing the petals - CONSTRAINED TO VIEWPORT */
+
 .petal:nth-child(1) {
   left: 8%;
   animation-duration: 7s;
@@ -457,7 +457,7 @@ footer {
   animation-delay: 4s;
 }
 
-/* Minimalist Icon Styling */
+
 .icon-wrapper {
   font-size: 2rem;
   color: var(--primary-brown);
@@ -492,7 +492,7 @@ footer {
   margin-top: 5px;
 }
 
-/* Contact Info Container */
+
 .contact-info {
   margin: 30px 0;
   display: flex;
@@ -500,21 +500,21 @@ footer {
   gap: 20px;
 }
 
-/* Individual Item Wrapper */
+
 .contact-item {
   display: flex;
   align-items: flex-start;
   gap: 15px;
 }
 
-/* Icon Style */
+
 .contact-item i {
   color: var(--primary-brown);
   font-size: 1.2rem;
   margin-top: 5px;
 }
 
-/* Text Adjustment */
+
 .contact-item p {
   margin: 0;
   line-height: 1.5;
@@ -529,7 +529,7 @@ footer {
   letter-spacing: 1px;
 }
 
-/* Styling for the Directions Button */
+
 .location-details .btn-dark {
   position: relative;
   overflow: hidden;
@@ -538,7 +538,7 @@ footer {
   z-index: 1;
 }
 
-/* Hover Effect: Glowing & Lifting */
+
 .location-details .btn-dark:hover {
   background-color: var(--primary-brown);
   transform: translateY(-5px);
@@ -566,11 +566,7 @@ footer {
   left: 100%;
 }
 
-/* =========================================
-   RESPONSIVE DESIGN
-   ========================================= */
 
-/* Tablet Responsive */
 @media (max-width: 992px) {
   .location-section {
     padding: 60px 5%;
@@ -590,9 +586,9 @@ footer {
   }
 }
 
-/* Mobile Responsive - 768px */
+
 @media (max-width: 768px) {
-  /* Navbar - Fixed at top on mobile */
+ 
   .hero {
     padding: 0 4%;
   }
@@ -616,7 +612,6 @@ footer {
     font-size: 0.75rem;
   }
 
-  /* Hero Content */
   .hero-content {
     margin: 80px 0 40px 0;
     max-width: 100%;
@@ -641,7 +636,7 @@ footer {
     font-size: 0.9rem;
   }
 
-  /* Buttons */
+ 
   .hero-btns {
     display: flex;
     flex-direction: column;
@@ -655,7 +650,7 @@ footer {
     text-align: center;
   }
 
-  /* Sections */
+  
   .section {
     padding: 50px 5%;
   }
@@ -668,7 +663,7 @@ footer {
     font-size: 0.9rem;
   }
 
-  /* Features Grid */
+ 
   .features-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -685,7 +680,7 @@ footer {
     max-width: 100%;
   }
 
-  /* Card Grid */
+ 
   .card-grid {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -697,7 +692,7 @@ footer {
     height: 250px;
   }
 
-  /* Location Section */
+ 
   .location-section {
     flex-direction: column;
     padding: 40px 5%;
@@ -730,7 +725,7 @@ footer {
     margin-top: 0;
   }
 
-  /* Footer */
+ 
   footer {
     flex-direction: column;
     gap: 40px;
@@ -765,14 +760,14 @@ footer {
     justify-content: center;
   }
 
-  /* Petals - Smaller on mobile */
+ 
   .petal {
     width: 10px;
     height: 15px;
   }
 }
 
-/* Small Mobile - 480px */
+
 @media (max-width: 480px) {
   .navbar {
     padding: 15px 0;
@@ -792,7 +787,7 @@ footer {
     letter-spacing: 1px;
   }
 
-  /* Hero Content */
+  
   .hero-content {
     margin: 60px 0 30px 0;
   }
@@ -819,7 +814,7 @@ footer {
     padding: 10px 20px;
   }
 
-  /* Sections */
+ 
   .section {
     padding: 40px 4%;
   }
@@ -836,7 +831,7 @@ footer {
     font-size: 0.85rem;
   }
 
-  /* Features */
+  
   .icon-wrapper {
     width: 45px;
     height: 45px;
@@ -851,7 +846,7 @@ footer {
     font-size: 0.8rem;
   }
 
-  /* Cards */
+  
   .card img,
   .menu-item img {
     height: 200px;
@@ -862,7 +857,7 @@ footer {
     padding: 10px;
   }
 
-  /* Location */
+  
   .location-section {
     padding: 30px 4%;
   }
@@ -879,7 +874,7 @@ footer {
     font-size: 0.8rem;
   }
 
-  /* Footer */
+ 
   footer {
     padding: 30px 4%;
   }
@@ -909,14 +904,14 @@ footer {
     font-size: 1.2rem;
   }
 
-  /* Petals - Even smaller */
+ 
   .petal {
     width: 8px;
     height: 12px;
   }
 }
 
-/* Extra Small Mobile - 375px */
+
 @media (max-width: 375px) {
   .navbar .logo {
     font-size: 0.75rem;
@@ -1004,7 +999,7 @@ footer {
   }
 }
 
-/* Landscape Mobile Fix */
+
 @media (max-width: 768px) and (orientation: landscape) {
   .hero {
     height: auto;
@@ -1034,15 +1029,15 @@ footer {
   border: none;
   padding: 0;
   cursor: pointer;
-  font-family: inherit; /* Ensures text matches your site font */
-  width: 100%; /* Allows the button to fill its container */
+  font-family: inherit; 
+  width: 100%; 
   transition: transform 0.2s ease;
 }
 
 .menu-item-button:hover {
-  transform: scale(1.05); /* Subtle pop effect when hovering */
+  transform: scale(1.05); 
 }
 
 .menu-item-button:active {
-  transform: scale(0.98); /* "Pressed" effect when clicked */
+  transform: scale(0.98); 
 }
